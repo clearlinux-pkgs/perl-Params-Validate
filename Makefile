@@ -1,4 +1,5 @@
 PKG_NAME := perl-Params-Validate
-URL := http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.21.tar.gz
+URL := http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.22.tar.gz
+ARCHIVES :=
 
 include ../common/Makefile.common
