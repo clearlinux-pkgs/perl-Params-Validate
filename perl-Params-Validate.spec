@@ -4,7 +4,7 @@
 #
 Name     : perl-Params-Validate
 Version  : 1.23
-Release  : 14
+Release  : 15
 URL      : http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.23.tar.gz
 Source0  : http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.23.tar.gz
 Summary  : 'Validate method/function parameters'
