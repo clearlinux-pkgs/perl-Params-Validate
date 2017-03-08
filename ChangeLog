@@ -1,3 +1,13 @@
+1.26    2016-10-06
+
+- Reverted to Module::Build. The use of EUMM in 1.25 broke Windows builds.
+
+
+1.25    2016-09-25
+
+- Switched to ExtUtils::MakeMaker.
+
+
 1.24    2016-05-08
 
 - Author tests are no longer in t/. This makes running tests for non-authors
