@@ -4,7 +4,7 @@
 #
 Name     : perl-Params-Validate
 Version  : 1.26
-Release  : 19
+Release  : 20
 URL      : http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.26.tar.gz
 Source0  : http://www.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Params-Validate-1.26.tar.gz
 Summary  : 'Validate method/function parameters'
@@ -75,12 +75,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/Validate.pm
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/Validate/Constants.pm
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/Validate/PP.pm
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/Validate/XS.pm
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/ValidatePP.pm
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/Params/ValidateXS.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/Validate.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/Validate/Constants.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/Validate/PP.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/Validate/XS.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/ValidatePP.pm
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/Params/ValidateXS.pm
 
 %files doc
 %defattr(-,root,root,-)
@@ -88,4 +88,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.24.0/x86_64-linux/auto/Params/Validate/XS/XS.so
+/usr/lib/perl5/site_perl/5.24.0/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so
