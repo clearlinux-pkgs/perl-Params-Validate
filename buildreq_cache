@@ -1,6 +1,5 @@
-1.29
+1.30
 perl(Module::Implementation)
-perl(Module::Runtime)
 perl(Test::Fatal)
 perl(Test::Requires)
 perl(Try::Tiny)
