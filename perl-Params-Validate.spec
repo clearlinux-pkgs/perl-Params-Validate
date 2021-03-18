@@ -4,12 +4,13 @@
 #
 Name     : perl-Params-Validate
 Version  : 1.30
-Release  : 44
+Release  : 45
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.30.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.30.tar.gz
 Summary  : 'Validate method/function parameters'
 Group    : Development/Tools
 License  : Artistic-2.0
+Requires: perl-Params-Validate-license = %{version}-%{release}
 Requires: perl-Params-Validate-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Module::Implementation)
@@ -31,6 +32,14 @@ Requires: perl-Params-Validate = %{version}-%{release}
 
 %description dev
 dev components for the perl-Params-Validate package.
+
+
+%package license
+Summary: license components for the perl-Params-Validate package.
+Group: Default
+
+%description license
+license components for the perl-Params-Validate package.
 
 
 %package perl
@@ -68,6 +77,8 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-Params-Validate
+cp %{_builddir}/Params-Validate-1.30/LICENSE %{buildroot}/usr/share/package-licenses/perl-Params-Validate/acaecad1ad4ac7166d6f607d9131ccee3bc1bda1
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -85,12 +96,16 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %defattr(-,root,root,-)
 /usr/share/man/man3/Params::Validate.3
 
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Params-Validate/acaecad1ad4ac7166d6f607d9131ccee3bc1bda1
+
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/Validate.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/Validate/Constants.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/Validate/PP.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/Validate/XS.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/ValidatePP.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/Params/ValidateXS.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/Validate.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/Validate/Constants.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/Validate/PP.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/Validate/XS.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/ValidatePP.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/Params/ValidateXS.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/Params/Validate/XS/XS.so
