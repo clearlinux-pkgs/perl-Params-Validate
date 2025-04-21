@@ -7,7 +7,7 @@
 #
 Name     : perl-Params-Validate
 Version  : 1.31
-Release  : 55
+Release  : 56
 URL      : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.31.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-Validate-1.31.tar.gz
 Summary  : 'Validate method/function parameters'
